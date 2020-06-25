@@ -1,0 +1,142 @@
+
+*{
+    font-size: 14px;
+    font-family:"微软雅黑";
+}
+a{
+    text-decoration: none;
+}
+li{
+    
+    list-style: none;
+}
+.text p:first-child{
+    padding-top: 60px;
+    font-size: 14px;
+    color: #888888;
+}
+.text h1{
+    font-size: 32px;
+    color: #214073;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.text p:last-child{
+    font-size: calc(1rem + 0.5vw);
+    color: #888988;
+}
+
+#top{
+    width: 100%;height: 40px;
+}
+#top .phone::before{
+    content: '\1F60A';
+    display: inline-block;
+}
+
+/* 导航栏 */
+#nav{
+    height: 90px;
+}
+.nav-item .link_active{
+    color: rgb(15, 15, 15);
+}
+.nav-item .link_active:hover{
+    color: red;
+    text-decoration: none;
+}
+@media screen and (max-width:992px){
+    #nav{
+        height: 50px;
+    }
+    .logo_size{
+        width: 197.5px;
+    }
+}
+
+/* 轮播图 */
+.carousel-indicators li{
+    width: 10px;height: 10px;
+    border-radius: 50%;
+}
+.left_bgimg:hover{
+    background-image: linear-gradient(to right,rgba(77, 76, 76, 0.589),rgba(204, 204, 204, 0));
+}
+.right_bgimg:hover{
+    background-image: linear-gradient(to left,rgba(77, 76, 76, 0.589),rgba(204, 204, 204, 0));
+}
+
+
+/* 案例展示 */
+#case{
+    background-color: #e5e5e5;
+}
+#case .row{
+    width: auto;height: 1143px;
+    overflow: hidden;
+}
+#case .row img{
+    max-width: 500px;
+}
+#case .row p{
+    margin-top: 1rem;
+    font-size: calc(1rem + 1vw);
+    color: #555555;
+}
+
+/* 合作优势 */
+ #advantage .ad_box{
+    /* margin-top: 30px;
+    height: 404px; */
+    /* padding: 50px 0px; */
+    /* border: 1px solid rgb(20, 20, 20); */
+}
+#advantage .ad_box p{
+    padding: 0px 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* 关于我们 */
+#about{
+    width: 100%;
+    color: rgba(255, 255, 255, 0.952);
+    background-image: url(../img/city.jpg);
+    background-size: cover;
+    /* padding: 0px 40px; */
+    background-position: top;
+     background-attachment: fixed;
+     
+}
+#about .mengban{
+    background-color: rgba(46, 46, 46, 0.418);
+}
+/* .about_top{
+    line-height: 50px;
+} */
+.about_content p,.about_bottom p{
+    line-height: 50px;
+    font-size: 16px;
+}
+.about_bottom p{
+    padding: 30px 0px 130px;
+}
+
+/* 合作伙伴 */
+#partner>.content{
+    background:#f6f6f6; padding-top:30px; padding-bottom:10px;
+    box-sizing: content-box;
+}
+
+/* 底部 */
+#footer p{
+    line-height: 30px;
+}
+
+/* 右边fixed */
+.right{
+    display: inline-block;
+    position: fixed;
+    right: 0px;
+    top: 200px;
+}
