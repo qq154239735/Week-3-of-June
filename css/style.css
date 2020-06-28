@@ -46,14 +46,7 @@ li{
     color: red;
     text-decoration: none;
 }
-@media screen and (max-width:992px){
-    #nav{
-        height: 50px;
-    }
-    .logo_size{
-        width: 197.5px;
-    }
-}
+
 
 /* 轮播图 */
 .carousel-indicators li{
@@ -87,16 +80,17 @@ li{
 
 /* 合作优势 */
  #advantage .ad_box{
-    /* margin-top: 30px;
-    height: 404px; */
-    /* padding: 50px 0px; */
-    /* border: 1px solid rgb(20, 20, 20); */
+    margin-top: 30px;
+    height: 404px;
+    padding: 50px 0px;
+    border: 1px solid rgb(20, 20, 20);
 }
-#advantage .ad_box p{
+#advantage .ad_box>p{
     padding: 0px 10px;
     text-align: left;
     font-size: 16px;
 }
+
 
 /* 关于我们 */
 #about{
@@ -126,12 +120,23 @@ li{
 /* 合作伙伴 */
 #partner>.content{
     background:#f6f6f6; padding-top:30px; padding-bottom:10px;
-    box-sizing: content-box;
+    
 }
+.c_box{
+     box-sizing: content-box;
 
+}
+.c_box>div{
+    margin: 10px;
+    /* background-color: #ffff; */
+}
+.c_box>div>img{
+    max-width: 100%;
+}
 /* 底部 */
 #footer p{
     line-height: 30px;
+
 }
 
 /* 右边fixed */
@@ -140,4 +145,29 @@ li{
     position: fixed;
     right: 0px;
     top: 200px;
+}
+
+@media screen and (max-width:766px){
+    #advantage .ad_box>p{
+        font-size: 25px;
+    }
+    .right>img{
+        width: 50%;
+        float: right;
+    }
+
+   
+}
+@media screen and (max-width:992px){
+    #nav{
+        height: 50px;
+    }
+    .logo_size{
+        width: 197.5px;
+    }
+    .c_box>div{
+        margin: 5px;
+        background-color:#ffff;
+    }
+
 }
